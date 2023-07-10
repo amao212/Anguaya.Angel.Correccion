@@ -108,7 +108,7 @@ public class Horario extends HorarioBase implements IGestionarArchivoHorario{
     public void aaBuscar(){
         String aaDirectorio = ".\\Horarios";
         System.out.print("[+] Ingresa el codigo a buscar: ");
-        String aaBuscar = sc.nextLine();
+        String aaBuscar = sc.nextLine().trim();
         System.out.println(">>> Codigo: "+ aaBuscar);
         File aaCarpeta = new File(aaDirectorio);
         File[] aaFiles = aaCarpeta.listFiles();
